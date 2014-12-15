@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B463D4B19D8645200BFE5C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B463D4A19D8645200BFE5C2 /* main.m */; };
+		6B463D4E19D8645200BFE5C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B463D4D19D8645200BFE5C2 /* AppDelegate.m */; };
+		6B463D5119D8645200BFE5C2 /* hRoutingCoreDataImport.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B463D4F19D8645200BFE5C2 /* hRoutingCoreDataImport.xcdatamodeld */; };
+		6B463D5319D8645200BFE5C2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B463D5219D8645200BFE5C2 /* Images.xcassets */; };
+		6B463D5619D8645200BFE5C2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B463D5419D8645200BFE5C2 /* MainMenu.xib */; };
+		6B463D6219D8645200BFE5C2 /* hRoutingCoreDataImportTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B463D6119D8645200BFE5C2 /* hRoutingCoreDataImportTests.m */; };
+		6B463D7019D86C3E00BFE5C2 /* GraphNodesCoordinates.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6B463D6E19D86C3E00BFE5C2 /* GraphNodesCoordinates.csv */; };
+		6B463D7319D86E0C00BFE5C2 /* GraphNodesCoordinates.csv in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6B463D6E19D86C3E00BFE5C2 /* GraphNodesCoordinates.csv */; };
+		6B463D7619D9702800BFE5C2 /* GraphEdges.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6B463D7419D9702800BFE5C2 /* GraphEdges.csv */; };
+		6B463D7819D9709100BFE5C2 /* GraphEdges.csv in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6B463D7419D9702800BFE5C2 /* GraphEdges.csv */; };
+		6B463D7B19D9711600BFE5C2 /* GraphNodeIndex.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6B463D7919D9711600BFE5C2 /* GraphNodeIndex.csv */; };
+		6B463D7D19D9712400BFE5C2 /* GraphNodeIndex.csv in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6B463D7919D9711600BFE5C2 /* GraphNodeIndex.csv */; };
+		6B463D8219D98FB400BFE5C2 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B463D8019D98FB400BFE5C2 /* Location.m */; };
+		6B463D8319D98FB400BFE5C2 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B463D8119D98FB400BFE5C2 /* Route.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B463D5C19D8645200BFE5C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B463D3D19D8645100BFE5C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B463D4419D8645100BFE5C2;
+			remoteInfo = hRoutingCoreDataImport;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6B463D7219D86DF100BFE5C2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				6B463D7D19D9712400BFE5C2 /* GraphNodeIndex.csv in CopyFiles */,
+				6B463D7819D9709100BFE5C2 /* GraphEdges.csv in CopyFiles */,
+				6B463D7319D86E0C00BFE5C2 /* GraphNodesCoordinates.csv in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6B463D4519D8645100BFE5C2 /* hRoutingCoreDataImport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hRoutingCoreDataImport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B463D4919D8645200BFE5C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B463D4A19D8645200BFE5C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B463D4C19D8645200BFE5C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6B463D4D19D8645200BFE5C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6B463D5019D8645200BFE5C2 /* hRoutingCoreDataImport.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hRoutingCoreDataImport.xcdatamodel; sourceTree = "<group>"; };
+		6B463D5219D8645200BFE5C2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6B463D5519D8645200BFE5C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6B463D5B19D8645200BFE5C2 /* hRoutingCoreDataImportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hRoutingCoreDataImportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B463D6019D8645200BFE5C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B463D6119D8645200BFE5C2 /* hRoutingCoreDataImportTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hRoutingCoreDataImportTests.m; sourceTree = "<group>"; };
+		6B463D6E19D86C3E00BFE5C2 /* GraphNodesCoordinates.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GraphNodesCoordinates.csv; sourceTree = "<group>"; };
+		6B463D7419D9702800BFE5C2 /* GraphEdges.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GraphEdges.csv; sourceTree = "<group>"; };
+		6B463D7919D9711600BFE5C2 /* GraphNodeIndex.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GraphNodeIndex.csv; sourceTree = "<group>"; };
+		6B463D7E19D98FB400BFE5C2 /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Route.h; path = ../../HealthyRouting/HealthyRouting/Route.h; sourceTree = "<group>"; };
+		6B463D7F19D98FB400BFE5C2 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = ../../HealthyRouting/HealthyRouting/Location.h; sourceTree = "<group>"; };
+		6B463D8019D98FB400BFE5C2 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Location.m; path = ../../HealthyRouting/HealthyRouting/Location.m; sourceTree = "<group>"; };
+		6B463D8119D98FB400BFE5C2 /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Route.m; path = ../../HealthyRouting/HealthyRouting/Route.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B463D4219D8645100BFE5C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B463D5819D8645200BFE5C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B463D3C19D8645100BFE5C2 = {
+			isa = PBXGroup;
+			children = (
+				6B463D4719D8645100BFE5C2 /* hRoutingCoreDataImport */,
+				6B463D5E19D8645200BFE5C2 /* hRoutingCoreDataImportTests */,
+				6B463D4619D8645100BFE5C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B463D4619D8645100BFE5C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B463D4519D8645100BFE5C2 /* hRoutingCoreDataImport.app */,
+				6B463D5B19D8645200BFE5C2 /* hRoutingCoreDataImportTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B463D4719D8645100BFE5C2 /* hRoutingCoreDataImport */ = {
+			isa = PBXGroup;
+			children = (
+				6B463D4C19D8645200BFE5C2 /* AppDelegate.h */,
+				6B463D4D19D8645200BFE5C2 /* AppDelegate.m */,
+				6B463D7919D9711600BFE5C2 /* GraphNodeIndex.csv */,
+				6B463D7419D9702800BFE5C2 /* GraphEdges.csv */,
+				6B463D6E19D86C3E00BFE5C2 /* GraphNodesCoordinates.csv */,
+				6B463D7E19D98FB400BFE5C2 /* Route.h */,
+				6B463D7F19D98FB400BFE5C2 /* Location.h */,
+				6B463D8019D98FB400BFE5C2 /* Location.m */,
+				6B463D8119D98FB400BFE5C2 /* Route.m */,
+				6B463D5219D8645200BFE5C2 /* Images.xcassets */,
+				6B463D5419D8645200BFE5C2 /* MainMenu.xib */,
+				6B463D4F19D8645200BFE5C2 /* hRoutingCoreDataImport.xcdatamodeld */,
+				6B463D4819D8645200BFE5C2 /* Supporting Files */,
+			);
+			path = hRoutingCoreDataImport;
+			sourceTree = "<group>";
+		};
+		6B463D4819D8645200BFE5C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B463D4919D8645200BFE5C2 /* Info.plist */,
+				6B463D4A19D8645200BFE5C2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B463D5E19D8645200BFE5C2 /* hRoutingCoreDataImportTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B463D6119D8645200BFE5C2 /* hRoutingCoreDataImportTests.m */,
+				6B463D5F19D8645200BFE5C2 /* Supporting Files */,
+			);
+			path = hRoutingCoreDataImportTests;
+			sourceTree = "<group>";
+		};
+		6B463D5F19D8645200BFE5C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B463D6019D8645200BFE5C2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B463D4419D8645100BFE5C2 /* hRoutingCoreDataImport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B463D6519D8645200BFE5C2 /* Build configuration list for PBXNativeTarget "hRoutingCoreDataImport" */;
+			buildPhases = (
+				6B463D4119D8645100BFE5C2 /* Sources */,
+				6B463D4219D8645100BFE5C2 /* Frameworks */,
+				6B463D4319D8645100BFE5C2 /* Resources */,
+				6B463D7219D86DF100BFE5C2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hRoutingCoreDataImport;
+			productName = hRoutingCoreDataImport;
+			productReference = 6B463D4519D8645100BFE5C2 /* hRoutingCoreDataImport.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B463D5A19D8645200BFE5C2 /* hRoutingCoreDataImportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B463D6819D8645200BFE5C2 /* Build configuration list for PBXNativeTarget "hRoutingCoreDataImportTests" */;
+			buildPhases = (
+				6B463D5719D8645200BFE5C2 /* Sources */,
+				6B463D5819D8645200BFE5C2 /* Frameworks */,
+				6B463D5919D8645200BFE5C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B463D5D19D8645200BFE5C2 /* PBXTargetDependency */,
+			);
+			name = hRoutingCoreDataImportTests;
+			productName = hRoutingCoreDataImportTests;
+			productReference = 6B463D5B19D8645200BFE5C2 /* hRoutingCoreDataImportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B463D3D19D8645100BFE5C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "TIK, ETH Zurich";
+				TargetAttributes = {
+					6B463D4419D8645100BFE5C2 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					6B463D5A19D8645200BFE5C2 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 6B463D4419D8645100BFE5C2;
+					};
+				};
+			};
+			buildConfigurationList = 6B463D4019D8645100BFE5C2 /* Build configuration list for PBXProject "hRoutingCoreDataImport" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B463D3C19D8645100BFE5C2;
+			productRefGroup = 6B463D4619D8645100BFE5C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B463D4419D8645100BFE5C2 /* hRoutingCoreDataImport */,
+				6B463D5A19D8645200BFE5C2 /* hRoutingCoreDataImportTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B463D4319D8645100BFE5C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B463D7619D9702800BFE5C2 /* GraphEdges.csv in Resources */,
+				6B463D7019D86C3E00BFE5C2 /* GraphNodesCoordinates.csv in Resources */,
+				6B463D5319D8645200BFE5C2 /* Images.xcassets in Resources */,
+				6B463D5619D8645200BFE5C2 /* MainMenu.xib in Resources */,
+				6B463D7B19D9711600BFE5C2 /* GraphNodeIndex.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B463D5919D8645200BFE5C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B463D4119D8645100BFE5C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B463D4E19D8645200BFE5C2 /* AppDelegate.m in Sources */,
+				6B463D8219D98FB400BFE5C2 /* Location.m in Sources */,
+				6B463D5119D8645200BFE5C2 /* hRoutingCoreDataImport.xcdatamodeld in Sources */,
+				6B463D8319D98FB400BFE5C2 /* Route.m in Sources */,
+				6B463D4B19D8645200BFE5C2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B463D5719D8645200BFE5C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B463D6219D8645200BFE5C2 /* hRoutingCoreDataImportTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B463D5D19D8645200BFE5C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B463D4419D8645100BFE5C2 /* hRoutingCoreDataImport */;
+			targetProxy = 6B463D5C19D8645200BFE5C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6B463D5419D8645200BFE5C2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B463D5519D8645200BFE5C2 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B463D6319D8645200BFE5C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6B463D6419D8645200BFE5C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6B463D6619D8645200BFE5C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = hRoutingCoreDataImport/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6B463D6719D8645200BFE5C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = hRoutingCoreDataImport/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6B463D6919D8645200BFE5C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = hRoutingCoreDataImportTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hRoutingCoreDataImport.app/Contents/MacOS/hRoutingCoreDataImport";
+			};
+			name = Debug;
+		};
+		6B463D6A19D8645200BFE5C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = hRoutingCoreDataImportTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hRoutingCoreDataImport.app/Contents/MacOS/hRoutingCoreDataImport";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B463D4019D8645100BFE5C2 /* Build configuration list for PBXProject "hRoutingCoreDataImport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B463D6319D8645200BFE5C2 /* Debug */,
+				6B463D6419D8645200BFE5C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B463D6519D8645200BFE5C2 /* Build configuration list for PBXNativeTarget "hRoutingCoreDataImport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B463D6619D8645200BFE5C2 /* Debug */,
+				6B463D6719D8645200BFE5C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6B463D6819D8645200BFE5C2 /* Build configuration list for PBXNativeTarget "hRoutingCoreDataImportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B463D6919D8645200BFE5C2 /* Debug */,
+				6B463D6A19D8645200BFE5C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6B463D4F19D8645200BFE5C2 /* hRoutingCoreDataImport.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6B463D5019D8645200BFE5C2 /* hRoutingCoreDataImport.xcdatamodel */,
+			);
+			currentVersion = 6B463D5019D8645200BFE5C2 /* hRoutingCoreDataImport.xcdatamodel */;
+			path = hRoutingCoreDataImport.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6B463D3D19D8645100BFE5C2 /* Project object */;
+}
