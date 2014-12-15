@@ -20,9 +20,11 @@ Get the app for free at https://itunes.apple.com/us/app/hrouting-health-optimal-
 
 Code Layout
 ------------
-* /hRouting_iOS/AppIcons Application icons in different resolutions
+* /hRouting_iOS/AppIcons
+Application icons in different resolutions
 
-* /hRouting_iOS/AppPreview Preview video used in the app store
+* /hRouting_iOS/AppPreview
+Preview video used in the app store
 
 * /hRouting_iOS/AppStorePics Images used in the app store for iPhone 4, iPhone 5/5s, iPhone 6, iPhone 6p, and iPad Retina
 
