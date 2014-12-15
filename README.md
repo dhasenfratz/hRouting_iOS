@@ -17,3 +17,15 @@ Get the app for free at https://itunes.apple.com/us/app/hrouting-health-optimal-
 ![Alt text](/README_img/iPhone5_History.png?raw=true)
 ![Alt text](/README_img/iPhone5_Settings.png?raw=true)
 ![Alt text](/README_img/iPhone5_About.png?raw=true)
+
+Code Layout
+------------
+/hRouting_iOS/AppIcons Application icons in different resolutions
+/hRouting_iOS/AppPreview Preview video used in the app store
+/hRouting_iOS/AppStorePics Images used in the app store for iPhone 4, iPhone 5/5s, iPhone 6, iPhone 6p, and iPad Retina
+/hRouting_iOS/LaunchImages Launch images for the different phone models
+/hRouting_iOS/NavigationBarButtons Buttons used in the app for the navigation bar
+/hRouting_iOS/README_img Images used in README.md
+/hRouting_iOS/hRoutingApp Implementation of the iOS iPhone/iPad application
+/hRouting_iOS/hRoutingCreateCoreData Implementation of the iOS desktop application to create the default sqlite database loaded in the app
+/hRouting_iOS/inAppImages Graphics used in the app
