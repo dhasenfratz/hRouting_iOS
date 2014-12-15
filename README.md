@@ -18,7 +18,7 @@ Get the app for free at https://itunes.apple.com/us/app/hrouting-health-optimal-
 ![Alt text](/README_img/iPhone5_Settings.png?raw=true)
 ![Alt text](/README_img/iPhone5_About.png?raw=true)
 
-Code Layout
+Repository Layout
 ------------
 * `/hRouting_iOS/AppIcons` Application icons in different resolutions
 
