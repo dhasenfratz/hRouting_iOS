@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B03156019C9E9CF0001165D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B03155F19C9E9CF0001165D /* Foundation.framework */; };
+		6B03156219C9E9D00001165D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B03156119C9E9D00001165D /* CoreGraphics.framework */; };
+		6B03156419C9E9D00001165D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B03156319C9E9D00001165D /* UIKit.framework */; };
+		6B03156A19C9E9D00001165D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B03156819C9E9D00001165D /* InfoPlist.strings */; };
+		6B03156C19C9E9D00001165D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B03156B19C9E9D00001165D /* main.m */; };
+		6B03157019C9E9D00001165D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B03156F19C9E9D00001165D /* AppDelegate.m */; };
+		6B03157219C9E9D00001165D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B03157119C9E9D00001165D /* Images.xcassets */; };
+		6B03157919C9E9D00001165D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B03157819C9E9D00001165D /* XCTest.framework */; };
+		6B03157A19C9E9D00001165D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B03155F19C9E9CF0001165D /* Foundation.framework */; };
+		6B03157B19C9E9D00001165D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B03156319C9E9D00001165D /* UIKit.framework */; };
+		6B03158319C9E9D00001165D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B03158119C9E9D00001165D /* InfoPlist.strings */; };
+		6B03158519C9E9D00001165D /* HealthyRoutingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B03158419C9E9D00001165D /* HealthyRoutingTests.m */; };
+		6B03159319C9EC5D0001165D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B03159219C9EC5D0001165D /* Main.storyboard */; };
+		6B0315A019C9F7010001165D /* Icon_set_setup.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B03159C19C9F7010001165D /* Icon_set_setup.png */; };
+		6B0315A119C9F7010001165D /* settings.xcf in Resources */ = {isa = PBXBuildFile; fileRef = 6B03159D19C9F7010001165D /* settings.xcf */; };
+		6B0315A219C9F7010001165D /* settings32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B03159E19C9F7010001165D /* settings32x32.png */; };
+		6B0315A319C9F7010001165D /* settings64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B03159F19C9F7010001165D /* settings64x64.png */; };
+		6B0315A719C9F9280001165D /* history.xcf in Resources */ = {isa = PBXBuildFile; fileRef = 6B0315A419C9F9280001165D /* history.xcf */; };
+		6B0315A819C9F9280001165D /* history32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B0315A519C9F9280001165D /* history32x32.png */; };
+		6B0315A919C9F9280001165D /* history64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B0315A619C9F9280001165D /* history64x64.png */; };
+		6B0315AD19C9FAEA0001165D /* myroute.xcf in Resources */ = {isa = PBXBuildFile; fileRef = 6B0315AA19C9FAEA0001165D /* myroute.xcf */; };
+		6B0315AE19C9FAEA0001165D /* myroute32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B0315AB19C9FAEA0001165D /* myroute32x32.png */; };
+		6B0315AF19C9FAEA0001165D /* myroute64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B0315AC19C9FAEA0001165D /* myroute64x64.png */; };
+		6B04D5A51A0399B000AE681D /* mylocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B04D5A41A0399B000AE681D /* mylocation.png */; };
+		6B33BC1C19D2FECC00A8ED53 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B33BC1B19D2FECC00A8ED53 /* AboutViewController.m */; };
+		6B463D9019DAAB6700BFE5C2 /* hRoutingCoreDataImport.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6B463D8F19DAAB6700BFE5C2 /* hRoutingCoreDataImport.sqlite */; };
+		6B463D9319DAAB8800BFE5C2 /* hRoutingCoreDataImport.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B463D9119DAAB8800BFE5C2 /* hRoutingCoreDataImport.xcdatamodeld */; };
+		6BA5345C1A3644CF00D19339 /* bg640x1136_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BA534591A3644CF00D19339 /* bg640x1136_1.png */; };
+		6BA5345D1A3644CF00D19339 /* bg640x1136_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BA5345A1A3644CF00D19339 /* bg640x1136_2.png */; };
+		6BA5345E1A3644CF00D19339 /* bg640x1136_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BA5345B1A3644CF00D19339 /* bg640x1136_3.png */; };
+		6BA534601A364FEF00D19339 /* bg640x1136_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BA5345F1A364FEF00D19339 /* bg640x1136_4.png */; };
+		6BC7E69E1A3754560087A2C6 /* bg768x1024_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BC7E69D1A3754560087A2C6 /* bg768x1024_1.png */; };
+		6BC7E6A21A37550F0087A2C6 /* bg768x1024_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BC7E69F1A37550F0087A2C6 /* bg768x1024_2.png */; };
+		6BC7E6A31A37550F0087A2C6 /* bg768x1024_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BC7E6A01A37550F0087A2C6 /* bg768x1024_3.png */; };
+		6BC7E6A41A37550F0087A2C6 /* bg768x1024_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BC7E6A11A37550F0087A2C6 /* bg768x1024_4.png */; };
+		6BCA007A19CA2D8F007DB265 /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA007919CA2D8F007DB265 /* HistoryTableViewController.m */; };
+		6BCA007D19CA30E6007DB265 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA007C19CA30E6007DB265 /* Route.m */; };
+		6BCA008119CB75E2007DB265 /* about.xcf in Resources */ = {isa = PBXBuildFile; fileRef = 6BCA007E19CB75E2007DB265 /* about.xcf */; };
+		6BCA008219CB75E2007DB265 /* about32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BCA007F19CB75E2007DB265 /* about32x32.png */; };
+		6BCA008319CB75E2007DB265 /* about64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BCA008019CB75E2007DB265 /* about64x64.png */; };
+		6BCA008919CC1766007DB265 /* MyRouteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA008819CC1766007DB265 /* MyRouteTableViewController.m */; };
+		6BCA008D19CC28E1007DB265 /* MyRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA008B19CC1EBB007DB265 /* MyRouteViewController.m */; };
+		6BCA009019CC8089007DB265 /* ufp_map_winter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BCA008F19CC8089007DB265 /* ufp_map_winter.jpg */; };
+		6BCA009219CC8184007DB265 /* os_eth_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BCA009119CC8184007DB265 /* os_eth_logo.png */; };
+		6BCA009519CCAFF8007DB265 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA009419CCAFF8007DB265 /* Location.m */; };
+		6BCA009719CCE112007DB265 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCA009619CCE112007DB265 /* GoogleMaps.framework */; };
+		6BCA009919CCE14E007DB265 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6BCA009819CCE14E007DB265 /* GoogleMaps.bundle */; };
+		6BCA00A619CCE1FE007DB265 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCA009A19CCE1FE007DB265 /* AVFoundation.framework */; };
+		6BCA00A719CCE1FE007DB265 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCA009B19CCE1FE007DB265 /* CoreData.framework */; };
+		6BCA00A819CCE1FE007DB265 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCA009C19CCE1FE007DB265 /* CoreLocation.framework */; };
+		6BCA00A919CCE1FE007DB265 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCA009D19CCE1FE007DB265 /* CoreText.framework */; };
+		6BCA00AA19CCE1FE007DB265 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCA009E19CCE1FE007DB265 /* GLKit.framework */; };
+		6BCA00AB19CCE1FE007DB265 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCA009F19CCE1FE007DB265 /* ImageIO.framework */; };
+		6BCA00AC19CCE1FE007DB265 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCA00A019CCE1FE007DB265 /* libc++.dylib */; };
+		6BCA00AD19CCE1FE007DB265 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCA00A119CCE1FE007DB265 /* libicucore.dylib */; };
+		6BCA00AE19CCE1FE007DB265 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCA00A219CCE1FE007DB265 /* libz.dylib */; };
+		6BCA00AF19CCE1FE007DB265 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCA00A319CCE1FE007DB265 /* OpenGLES.framework */; };
+		6BCA00B019CCE1FE007DB265 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCA00A419CCE1FE007DB265 /* QuartzCore.framework */; };
+		6BCA00B119CCE1FE007DB265 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCA00A519CCE1FE007DB265 /* SystemConfiguration.framework */; };
+		6BCA00B419CCE3A9007DB265 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA00B319CCE3A9007DB265 /* MapViewController.m */; };
+		6BCA00B719D0026F007DB265 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA00B619D0026F007DB265 /* SettingsTableViewController.m */; };
+		6BF2B10019F3134500A352AB /* os_eth_logo_cropped.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BF2B0FF19F3134500A352AB /* os_eth_logo_cropped.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B03157C19C9E9D00001165D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B03155419C9E9CF0001165D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B03155B19C9E9CF0001165D;
+			remoteInfo = HealthyRouting;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6B03155C19C9E9CF0001165D /* hRouting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hRouting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B03155F19C9E9CF0001165D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6B03156119C9E9D00001165D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6B03156319C9E9D00001165D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6B03156719C9E9D00001165D /* hRouting-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hRouting-Info.plist"; sourceTree = "<group>"; };
+		6B03156919C9E9D00001165D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6B03156B19C9E9D00001165D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B03156D19C9E9D00001165D /* hRouting-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hRouting-Prefix.pch"; sourceTree = "<group>"; };
+		6B03156E19C9E9D00001165D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6B03156F19C9E9D00001165D /* AppDelegate.m */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6B03157119C9E9D00001165D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6B03157719C9E9D00001165D /* hRoutingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hRoutingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B03157819C9E9D00001165D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6B03158019C9E9D00001165D /* hRoutingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hRoutingTests-Info.plist"; sourceTree = "<group>"; };
+		6B03158219C9E9D00001165D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6B03158419C9E9D00001165D /* HealthyRoutingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthyRoutingTests.m; sourceTree = "<group>"; };
+		6B03159219C9EC5D0001165D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6B03159C19C9F7010001165D /* Icon_set_setup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_set_setup.png; sourceTree = "<group>"; };
+		6B03159D19C9F7010001165D /* settings.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = settings.xcf; sourceTree = "<group>"; };
+		6B03159E19C9F7010001165D /* settings32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings32x32.png; sourceTree = "<group>"; };
+		6B03159F19C9F7010001165D /* settings64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings64x64.png; sourceTree = "<group>"; };
+		6B0315A419C9F9280001165D /* history.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = history.xcf; sourceTree = "<group>"; };
+		6B0315A519C9F9280001165D /* history32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = history32x32.png; sourceTree = "<group>"; };
+		6B0315A619C9F9280001165D /* history64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = history64x64.png; sourceTree = "<group>"; };
+		6B0315AA19C9FAEA0001165D /* myroute.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = myroute.xcf; sourceTree = "<group>"; };
+		6B0315AB19C9FAEA0001165D /* myroute32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myroute32x32.png; sourceTree = "<group>"; };
+		6B0315AC19C9FAEA0001165D /* myroute64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myroute64x64.png; sourceTree = "<group>"; };
+		6B04D5A41A0399B000AE681D /* mylocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mylocation.png; sourceTree = "<group>"; };
+		6B33BC1A19D2FECC00A8ED53 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		6B33BC1B19D2FECC00A8ED53 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		6B463D8F19DAAB6700BFE5C2 /* hRoutingCoreDataImport.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = hRoutingCoreDataImport.sqlite; sourceTree = SOURCE_ROOT; };
+		6B463D9219DAAB8800BFE5C2 /* hRoutingCoreDataImport.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hRoutingCoreDataImport.xcdatamodel; sourceTree = "<group>"; };
+		6BA534591A3644CF00D19339 /* bg640x1136_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg640x1136_1.png; sourceTree = "<group>"; };
+		6BA5345A1A3644CF00D19339 /* bg640x1136_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg640x1136_2.png; sourceTree = "<group>"; };
+		6BA5345B1A3644CF00D19339 /* bg640x1136_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg640x1136_3.png; sourceTree = "<group>"; };
+		6BA5345F1A364FEF00D19339 /* bg640x1136_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg640x1136_4.png; sourceTree = "<group>"; };
+		6BC7E69D1A3754560087A2C6 /* bg768x1024_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg768x1024_1.png; sourceTree = "<group>"; };
+		6BC7E69F1A37550F0087A2C6 /* bg768x1024_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg768x1024_2.png; sourceTree = "<group>"; };
+		6BC7E6A01A37550F0087A2C6 /* bg768x1024_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg768x1024_3.png; sourceTree = "<group>"; };
+		6BC7E6A11A37550F0087A2C6 /* bg768x1024_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg768x1024_4.png; sourceTree = "<group>"; };
+		6BCA007819CA2D8F007DB265 /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewController.h; sourceTree = "<group>"; };
+		6BCA007919CA2D8F007DB265 /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewController.m; sourceTree = "<group>"; };
+		6BCA007B19CA30E6007DB265 /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
+		6BCA007C19CA30E6007DB265 /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
+		6BCA007E19CB75E2007DB265 /* about.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = about.xcf; sourceTree = "<group>"; };
+		6BCA007F19CB75E2007DB265 /* about32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about32x32.png; sourceTree = "<group>"; };
+		6BCA008019CB75E2007DB265 /* about64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about64x64.png; sourceTree = "<group>"; };
+		6BCA008719CC1766007DB265 /* MyRouteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRouteTableViewController.h; sourceTree = "<group>"; };
+		6BCA008819CC1766007DB265 /* MyRouteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = MyRouteTableViewController.m; sourceTree = "<group>"; tabWidth = 4; };
+		6BCA008A19CC1EBB007DB265 /* MyRouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRouteViewController.h; sourceTree = "<group>"; };
+		6BCA008B19CC1EBB007DB265 /* MyRouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRouteViewController.m; sourceTree = "<group>"; };
+		6BCA008F19CC8089007DB265 /* ufp_map_winter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ufp_map_winter.jpg; sourceTree = "<group>"; };
+		6BCA009119CC8184007DB265 /* os_eth_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = os_eth_logo.png; sourceTree = "<group>"; };
+		6BCA009319CCAFF8007DB265 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		6BCA009419CCAFF8007DB265 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		6BCA009619CCE112007DB265 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		6BCA009819CCE14E007DB265 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		6BCA009A19CCE1FE007DB265 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6BCA009B19CCE1FE007DB265 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6BCA009C19CCE1FE007DB265 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6BCA009D19CCE1FE007DB265 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		6BCA009E19CCE1FE007DB265 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		6BCA009F19CCE1FE007DB265 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		6BCA00A019CCE1FE007DB265 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		6BCA00A119CCE1FE007DB265 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		6BCA00A219CCE1FE007DB265 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		6BCA00A319CCE1FE007DB265 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		6BCA00A419CCE1FE007DB265 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6BCA00A519CCE1FE007DB265 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6BCA00B219CCE3A9007DB265 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		6BCA00B319CCE3A9007DB265 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		6BCA00B519D0026F007DB265 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		6BCA00B619D0026F007DB265 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		6BF2B0FF19F3134500A352AB /* os_eth_logo_cropped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = os_eth_logo_cropped.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B03155919C9E9CF0001165D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BCA00A619CCE1FE007DB265 /* AVFoundation.framework in Frameworks */,
+				6BCA00A719CCE1FE007DB265 /* CoreData.framework in Frameworks */,
+				6BCA00A819CCE1FE007DB265 /* CoreLocation.framework in Frameworks */,
+				6BCA00A919CCE1FE007DB265 /* CoreText.framework in Frameworks */,
+				6BCA00AA19CCE1FE007DB265 /* GLKit.framework in Frameworks */,
+				6BCA00AB19CCE1FE007DB265 /* ImageIO.framework in Frameworks */,
+				6BCA00AC19CCE1FE007DB265 /* libc++.dylib in Frameworks */,
+				6BCA00AD19CCE1FE007DB265 /* libicucore.dylib in Frameworks */,
+				6BCA00AE19CCE1FE007DB265 /* libz.dylib in Frameworks */,
+				6BCA00AF19CCE1FE007DB265 /* OpenGLES.framework in Frameworks */,
+				6BCA00B019CCE1FE007DB265 /* QuartzCore.framework in Frameworks */,
+				6BCA00B119CCE1FE007DB265 /* SystemConfiguration.framework in Frameworks */,
+				6B03156219C9E9D00001165D /* CoreGraphics.framework in Frameworks */,
+				6B03156419C9E9D00001165D /* UIKit.framework in Frameworks */,
+				6BCA009719CCE112007DB265 /* GoogleMaps.framework in Frameworks */,
+				6B03156019C9E9CF0001165D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B03157419C9E9D00001165D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B03157919C9E9D00001165D /* XCTest.framework in Frameworks */,
+				6B03157B19C9E9D00001165D /* UIKit.framework in Frameworks */,
+				6B03157A19C9E9D00001165D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B03155319C9E9CF0001165D = {
+			isa = PBXGroup;
+			children = (
+				6BCA008E19CC8089007DB265 /* Images */,
+				6B03159B19C9F7010001165D /* BarButtons */,
+				6B03156519C9E9D00001165D /* HealthyRouting */,
+				6B03157E19C9E9D00001165D /* HealthyRoutingTests */,
+				6B03155E19C9E9CF0001165D /* Frameworks */,
+				6B03155D19C9E9CF0001165D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B03155D19C9E9CF0001165D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B03155C19C9E9CF0001165D /* hRouting.app */,
+				6B03157719C9E9D00001165D /* hRoutingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B03155E19C9E9CF0001165D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BCA009A19CCE1FE007DB265 /* AVFoundation.framework */,
+				6BCA009B19CCE1FE007DB265 /* CoreData.framework */,
+				6BCA009C19CCE1FE007DB265 /* CoreLocation.framework */,
+				6BCA009D19CCE1FE007DB265 /* CoreText.framework */,
+				6BCA009E19CCE1FE007DB265 /* GLKit.framework */,
+				6BCA009F19CCE1FE007DB265 /* ImageIO.framework */,
+				6BCA00A019CCE1FE007DB265 /* libc++.dylib */,
+				6BCA00A119CCE1FE007DB265 /* libicucore.dylib */,
+				6BCA00A219CCE1FE007DB265 /* libz.dylib */,
+				6BCA00A319CCE1FE007DB265 /* OpenGLES.framework */,
+				6BCA00A419CCE1FE007DB265 /* QuartzCore.framework */,
+				6BCA00A519CCE1FE007DB265 /* SystemConfiguration.framework */,
+				6BCA009819CCE14E007DB265 /* GoogleMaps.bundle */,
+				6BCA009619CCE112007DB265 /* GoogleMaps.framework */,
+				6B03155F19C9E9CF0001165D /* Foundation.framework */,
+				6B03156119C9E9D00001165D /* CoreGraphics.framework */,
+				6B03156319C9E9D00001165D /* UIKit.framework */,
+				6B03157819C9E9D00001165D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B03156519C9E9D00001165D /* HealthyRouting */ = {
+			isa = PBXGroup;
+			children = (
+				6B463D9119DAAB8800BFE5C2 /* hRoutingCoreDataImport.xcdatamodeld */,
+				6B463D8F19DAAB6700BFE5C2 /* hRoutingCoreDataImport.sqlite */,
+				6BCA007B19CA30E6007DB265 /* Route.h */,
+				6BCA007C19CA30E6007DB265 /* Route.m */,
+				6BCA009319CCAFF8007DB265 /* Location.h */,
+				6BCA009419CCAFF8007DB265 /* Location.m */,
+				6B33BC1A19D2FECC00A8ED53 /* AboutViewController.h */,
+				6B33BC1B19D2FECC00A8ED53 /* AboutViewController.m */,
+				6BCA007819CA2D8F007DB265 /* HistoryTableViewController.h */,
+				6BCA007919CA2D8F007DB265 /* HistoryTableViewController.m */,
+				6B03159219C9EC5D0001165D /* Main.storyboard */,
+				6BCA00B519D0026F007DB265 /* SettingsTableViewController.h */,
+				6BCA00B619D0026F007DB265 /* SettingsTableViewController.m */,
+				6BCA00B219CCE3A9007DB265 /* MapViewController.h */,
+				6BCA00B319CCE3A9007DB265 /* MapViewController.m */,
+				6BCA008A19CC1EBB007DB265 /* MyRouteViewController.h */,
+				6BCA008B19CC1EBB007DB265 /* MyRouteViewController.m */,
+				6BCA008719CC1766007DB265 /* MyRouteTableViewController.h */,
+				6BCA008819CC1766007DB265 /* MyRouteTableViewController.m */,
+				6B03156E19C9E9D00001165D /* AppDelegate.h */,
+				6B03156F19C9E9D00001165D /* AppDelegate.m */,
+				6B03157119C9E9D00001165D /* Images.xcassets */,
+				6B03156619C9E9D00001165D /* Supporting Files */,
+			);
+			path = HealthyRouting;
+			sourceTree = "<group>";
+		};
+		6B03156619C9E9D00001165D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B03156719C9E9D00001165D /* hRouting-Info.plist */,
+				6B03156819C9E9D00001165D /* InfoPlist.strings */,
+				6B03156B19C9E9D00001165D /* main.m */,
+				6B03156D19C9E9D00001165D /* hRouting-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B03157E19C9E9D00001165D /* HealthyRoutingTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B03158419C9E9D00001165D /* HealthyRoutingTests.m */,
+				6B03157F19C9E9D00001165D /* Supporting Files */,
+			);
+			path = HealthyRoutingTests;
+			sourceTree = "<group>";
+		};
+		6B03157F19C9E9D00001165D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B03158019C9E9D00001165D /* hRoutingTests-Info.plist */,
+				6B03158119C9E9D00001165D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B03159B19C9F7010001165D /* BarButtons */ = {
+			isa = PBXGroup;
+			children = (
+				6BCA007E19CB75E2007DB265 /* about.xcf */,
+				6BCA007F19CB75E2007DB265 /* about32x32.png */,
+				6BCA008019CB75E2007DB265 /* about64x64.png */,
+				6B0315AA19C9FAEA0001165D /* myroute.xcf */,
+				6B0315AB19C9FAEA0001165D /* myroute32x32.png */,
+				6B0315AC19C9FAEA0001165D /* myroute64x64.png */,
+				6B0315A419C9F9280001165D /* history.xcf */,
+				6B0315A519C9F9280001165D /* history32x32.png */,
+				6B0315A619C9F9280001165D /* history64x64.png */,
+				6B03159C19C9F7010001165D /* Icon_set_setup.png */,
+				6B03159D19C9F7010001165D /* settings.xcf */,
+				6B03159E19C9F7010001165D /* settings32x32.png */,
+				6B03159F19C9F7010001165D /* settings64x64.png */,
+			);
+			name = BarButtons;
+			path = ../BarButtons;
+			sourceTree = "<group>";
+		};
+		6BCA008E19CC8089007DB265 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6BC7E69F1A37550F0087A2C6 /* bg768x1024_2.png */,
+				6BC7E6A01A37550F0087A2C6 /* bg768x1024_3.png */,
+				6BC7E6A11A37550F0087A2C6 /* bg768x1024_4.png */,
+				6BC7E69D1A3754560087A2C6 /* bg768x1024_1.png */,
+				6BA5345F1A364FEF00D19339 /* bg640x1136_4.png */,
+				6BA534591A3644CF00D19339 /* bg640x1136_1.png */,
+				6BA5345A1A3644CF00D19339 /* bg640x1136_2.png */,
+				6BA5345B1A3644CF00D19339 /* bg640x1136_3.png */,
+				6B04D5A41A0399B000AE681D /* mylocation.png */,
+				6BF2B0FF19F3134500A352AB /* os_eth_logo_cropped.png */,
+				6BCA009119CC8184007DB265 /* os_eth_logo.png */,
+				6BCA008F19CC8089007DB265 /* ufp_map_winter.jpg */,
+			);
+			name = Images;
+			path = ../Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B03155B19C9E9CF0001165D /* hRouting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B03158819C9E9D00001165D /* Build configuration list for PBXNativeTarget "hRouting" */;
+			buildPhases = (
+				6B03155819C9E9CF0001165D /* Sources */,
+				6B03155919C9E9CF0001165D /* Frameworks */,
+				6B03155A19C9E9CF0001165D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hRouting;
+			productName = HealthyRouting;
+			productReference = 6B03155C19C9E9CF0001165D /* hRouting.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B03157619C9E9D00001165D /* hRoutingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B03158B19C9E9D00001165D /* Build configuration list for PBXNativeTarget "hRoutingTests" */;
+			buildPhases = (
+				6B03157319C9E9D00001165D /* Sources */,
+				6B03157419C9E9D00001165D /* Frameworks */,
+				6B03157519C9E9D00001165D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B03157D19C9E9D00001165D /* PBXTargetDependency */,
+			);
+			name = hRoutingTests;
+			productName = HealthyRoutingTests;
+			productReference = 6B03157719C9E9D00001165D /* hRoutingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B03155419C9E9CF0001165D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "TIK, ETH Zurich";
+				TargetAttributes = {
+					6B03155B19C9E9CF0001165D = {
+						DevelopmentTeam = 8TUR3G87MJ;
+					};
+					6B03157619C9E9D00001165D = {
+						TestTargetID = 6B03155B19C9E9CF0001165D;
+					};
+				};
+			};
+			buildConfigurationList = 6B03155719C9E9CF0001165D /* Build configuration list for PBXProject "hRouting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6B03155319C9E9CF0001165D;
+			productRefGroup = 6B03155D19C9E9CF0001165D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B03155B19C9E9CF0001165D /* hRouting */,
+				6B03157619C9E9D00001165D /* hRoutingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B03155A19C9E9CF0001165D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B03159319C9EC5D0001165D /* Main.storyboard in Resources */,
+				6BC7E6A21A37550F0087A2C6 /* bg768x1024_2.png in Resources */,
+				6BCA009019CC8089007DB265 /* ufp_map_winter.jpg in Resources */,
+				6BA534601A364FEF00D19339 /* bg640x1136_4.png in Resources */,
+				6BA5345E1A3644CF00D19339 /* bg640x1136_3.png in Resources */,
+				6BA5345D1A3644CF00D19339 /* bg640x1136_2.png in Resources */,
+				6BC7E69E1A3754560087A2C6 /* bg768x1024_1.png in Resources */,
+				6B0315AD19C9FAEA0001165D /* myroute.xcf in Resources */,
+				6BCA009919CCE14E007DB265 /* GoogleMaps.bundle in Resources */,
+				6B0315A219C9F7010001165D /* settings32x32.png in Resources */,
+				6BCA009219CC8184007DB265 /* os_eth_logo.png in Resources */,
+				6B0315AF19C9FAEA0001165D /* myroute64x64.png in Resources */,
+				6B0315A019C9F7010001165D /* Icon_set_setup.png in Resources */,
+				6B0315A919C9F9280001165D /* history64x64.png in Resources */,
+				6B03156A19C9E9D00001165D /* InfoPlist.strings in Resources */,
+				6BCA008119CB75E2007DB265 /* about.xcf in Resources */,
+				6B463D9019DAAB6700BFE5C2 /* hRoutingCoreDataImport.sqlite in Resources */,
+				6BCA008319CB75E2007DB265 /* about64x64.png in Resources */,
+				6B0315A719C9F9280001165D /* history.xcf in Resources */,
+				6BA5345C1A3644CF00D19339 /* bg640x1136_1.png in Resources */,
+				6BCA008219CB75E2007DB265 /* about32x32.png in Resources */,
+				6B0315A819C9F9280001165D /* history32x32.png in Resources */,
+				6B04D5A51A0399B000AE681D /* mylocation.png in Resources */,
+				6BC7E6A41A37550F0087A2C6 /* bg768x1024_4.png in Resources */,
+				6B03157219C9E9D00001165D /* Images.xcassets in Resources */,
+				6B0315A119C9F7010001165D /* settings.xcf in Resources */,
+				6B0315AE19C9FAEA0001165D /* myroute32x32.png in Resources */,
+				6B0315A319C9F7010001165D /* settings64x64.png in Resources */,
+				6BC7E6A31A37550F0087A2C6 /* bg768x1024_3.png in Resources */,
+				6BF2B10019F3134500A352AB /* os_eth_logo_cropped.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B03157519C9E9D00001165D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B03158319C9E9D00001165D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B03155819C9E9CF0001165D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BCA008D19CC28E1007DB265 /* MyRouteViewController.m in Sources */,
+				6BCA009519CCAFF8007DB265 /* Location.m in Sources */,
+				6BCA007A19CA2D8F007DB265 /* HistoryTableViewController.m in Sources */,
+				6BCA00B719D0026F007DB265 /* SettingsTableViewController.m in Sources */,
+				6B463D9319DAAB8800BFE5C2 /* hRoutingCoreDataImport.xcdatamodeld in Sources */,
+				6BCA00B419CCE3A9007DB265 /* MapViewController.m in Sources */,
+				6BCA007D19CA30E6007DB265 /* Route.m in Sources */,
+				6B33BC1C19D2FECC00A8ED53 /* AboutViewController.m in Sources */,
+				6B03157019C9E9D00001165D /* AppDelegate.m in Sources */,
+				6B03156C19C9E9D00001165D /* main.m in Sources */,
+				6BCA008919CC1766007DB265 /* MyRouteTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B03157319C9E9D00001165D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B03158519C9E9D00001165D /* HealthyRoutingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B03157D19C9E9D00001165D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B03155B19C9E9CF0001165D /* hRouting */;
+			targetProxy = 6B03157C19C9E9D00001165D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6B03156819C9E9D00001165D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B03156919C9E9D00001165D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6B03158119C9E9D00001165D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B03158219C9E9D00001165D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B03158619C9E9D00001165D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: David Hasenfratz (8TUR3G87MJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: David Hasenfratz (8TUR3G87MJ)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "";
+				PROVISIONING_PROFILE = "86e3f4ad-4596-4914-ab2d-713090a0ddc6";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6B03158719C9E9D00001165D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: David Hasenfratz (8TUR3G87MJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: David Hasenfratz (8TUR3G87MJ)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "";
+				PROVISIONING_PROFILE = "86e3f4ad-4596-4914-ab2d-713090a0ddc6";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B03158919C9E9D00001165D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: David Hasenfratz (8TUR3G87MJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: David Hasenfratz (8TUR3G87MJ)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HealthyRouting/hRouting-Prefix.pch";
+				INFOPLIST_FILE = "HealthyRouting/hRouting-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = hRouting;
+				PROVISIONING_PROFILE = "be93d35d-1611-4e97-9bcc-cde6ae77eaaf";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6B03158A19C9E9D00001165D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: David Hasenfratz (8TUR3G87MJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: David Hasenfratz (8TUR3G87MJ)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HealthyRouting/hRouting-Prefix.pch";
+				INFOPLIST_FILE = "HealthyRouting/hRouting-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = hRouting;
+				PROVISIONING_PROFILE = "be93d35d-1611-4e97-9bcc-cde6ae77eaaf";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6B03158C19C9E9D00001165D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HealthyRouting.app/HealthyRouting";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HealthyRouting/HealthyRouting-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HealthyRoutingTests/hRoutingTests-Info.plist";
+				PRODUCT_NAME = hRoutingTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6B03158D19C9E9D00001165D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HealthyRouting.app/HealthyRouting";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HealthyRouting/HealthyRouting-Prefix.pch";
+				INFOPLIST_FILE = "HealthyRoutingTests/hRoutingTests-Info.plist";
+				PRODUCT_NAME = hRoutingTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		6BF2B10119F44DF800A352AB /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: David Hasenfratz (8TUR3G87MJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: David Hasenfratz (8TUR3G87MJ)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "";
+				PROVISIONING_PROFILE = "86e3f4ad-4596-4914-ab2d-713090a0ddc6";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		6BF2B10219F44DF800A352AB /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: David Hasenfratz (8TUR3G87MJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: David Hasenfratz (8TUR3G87MJ)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HealthyRouting/hRouting-Prefix.pch";
+				INFOPLIST_FILE = "HealthyRouting/hRouting-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = hRouting;
+				PROVISIONING_PROFILE = "be93d35d-1611-4e97-9bcc-cde6ae77eaaf";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		6BF2B10319F44DF800A352AB /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HealthyRouting.app/HealthyRouting";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HealthyRouting/HealthyRouting-Prefix.pch";
+				INFOPLIST_FILE = "HealthyRoutingTests/hRoutingTests-Info.plist";
+				PRODUCT_NAME = hRoutingTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B03155719C9E9CF0001165D /* Build configuration list for PBXProject "hRouting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B03158619C9E9D00001165D /* Debug */,
+				6B03158719C9E9D00001165D /* Release */,
+				6BF2B10119F44DF800A352AB /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B03158819C9E9D00001165D /* Build configuration list for PBXNativeTarget "hRouting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B03158919C9E9D00001165D /* Debug */,
+				6B03158A19C9E9D00001165D /* Release */,
+				6BF2B10219F44DF800A352AB /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B03158B19C9E9D00001165D /* Build configuration list for PBXNativeTarget "hRoutingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B03158C19C9E9D00001165D /* Debug */,
+				6B03158D19C9E9D00001165D /* Release */,
+				6BF2B10319F44DF800A352AB /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6B463D9119DAAB8800BFE5C2 /* hRoutingCoreDataImport.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6B463D9219DAAB8800BFE5C2 /* hRoutingCoreDataImport.xcdatamodel */,
+			);
+			currentVersion = 6B463D9219DAAB8800BFE5C2 /* hRoutingCoreDataImport.xcdatamodel */;
+			path = hRoutingCoreDataImport.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6B03155419C9E9CF0001165D /* Project object */;
+}

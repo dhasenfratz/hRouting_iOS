@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6244" systemVersion="13F34" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="HistoryRoutes" syncable="YES">
+        <attribute name="route" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <entity name="StreetNetworkCoordinates" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="nodeId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="StreetNetworkEdges" syncable="YES">
+        <attribute name="distCost" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="healthCost" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="nodeId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="toNode" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="StreetNetworkIndex" syncable="YES">
+        <attribute name="fromIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="nodeId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="toIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="HistoryRoutes" positionX="72" positionY="126" width="128" height="58"/>
+        <element name="StreetNetworkCoordinates" positionX="45" positionY="-81" width="128" height="88"/>
+        <element name="StreetNetworkEdges" positionX="385" positionY="-94" width="128" height="105"/>
+        <element name="StreetNetworkIndex" positionX="205" positionY="-81" width="128" height="88"/>
+    </elements>
+</model>
