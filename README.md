@@ -10,5 +10,10 @@ Perfect for pedestrians, cyclists, and urban dwellers.
 
 Get the app for free at https://itunes.apple.com/us/app/hrouting-health-optimal-route/id931299863
 
-![Alt text](/README_img/iPhone5_MyRoute.png?raw=true)
 ![Alt text](/README_img/iPhone5_Welcome.png?raw=true)
+![Alt text](/README_img/iPhone5_MyRoute.png?raw=true)
+![Alt text](/README_img/iPhone5_Route.png?raw=true)
+![Alt text](/README_img/iPhone5_RouteInfo.png?raw=true)
+![Alt text](/README_img/iPhone5_History.png?raw=true)
+![Alt text](/README_img/iPhone5_Settings.png?raw=true)
+![Alt text](/README_img/iPhone5_About.png?raw=true)
