@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B022BF91A40547A00B6F987 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B022BF61A40547A00B6F987 /* Location.m */; };
+		6B022BFA1A40547A00B6F987 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B022BF81A40547A00B6F987 /* Route.m */; };
 		6B463D4B19D8645200BFE5C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B463D4A19D8645200BFE5C2 /* main.m */; };
 		6B463D4E19D8645200BFE5C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B463D4D19D8645200BFE5C2 /* AppDelegate.m */; };
 		6B463D5119D8645200BFE5C2 /* hRoutingCoreDataImport.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B463D4F19D8645200BFE5C2 /* hRoutingCoreDataImport.xcdatamodeld */; };
@@ -19,8 +21,6 @@
 		6B463D7819D9709100BFE5C2 /* GraphEdges.csv in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6B463D7419D9702800BFE5C2 /* GraphEdges.csv */; };
 		6B463D7B19D9711600BFE5C2 /* GraphNodeIndex.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6B463D7919D9711600BFE5C2 /* GraphNodeIndex.csv */; };
 		6B463D7D19D9712400BFE5C2 /* GraphNodeIndex.csv in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6B463D7919D9711600BFE5C2 /* GraphNodeIndex.csv */; };
-		6B463D8219D98FB400BFE5C2 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B463D8019D98FB400BFE5C2 /* Location.m */; };
-		6B463D8319D98FB400BFE5C2 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B463D8119D98FB400BFE5C2 /* Route.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +49,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6B022BF51A40547A00B6F987 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		6B022BF61A40547A00B6F987 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		6B022BF71A40547A00B6F987 /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
+		6B022BF81A40547A00B6F987 /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
 		6B463D4519D8645100BFE5C2 /* hRoutingCoreDataImport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hRoutingCoreDataImport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B463D4919D8645200BFE5C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B463D4A19D8645200BFE5C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,10 +67,6 @@
 		6B463D6E19D86C3E00BFE5C2 /* GraphNodesCoordinates.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GraphNodesCoordinates.csv; sourceTree = "<group>"; };
 		6B463D7419D9702800BFE5C2 /* GraphEdges.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GraphEdges.csv; sourceTree = "<group>"; };
 		6B463D7919D9711600BFE5C2 /* GraphNodeIndex.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GraphNodeIndex.csv; sourceTree = "<group>"; };
-		6B463D7E19D98FB400BFE5C2 /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Route.h; path = ../../HealthyRouting/HealthyRouting/Route.h; sourceTree = "<group>"; };
-		6B463D7F19D98FB400BFE5C2 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = ../../HealthyRouting/HealthyRouting/Location.h; sourceTree = "<group>"; };
-		6B463D8019D98FB400BFE5C2 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Location.m; path = ../../HealthyRouting/HealthyRouting/Location.m; sourceTree = "<group>"; };
-		6B463D8119D98FB400BFE5C2 /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Route.m; path = ../../HealthyRouting/HealthyRouting/Route.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,15 +108,15 @@
 		6B463D4719D8645100BFE5C2 /* hRoutingCoreDataImport */ = {
 			isa = PBXGroup;
 			children = (
+				6B022BF51A40547A00B6F987 /* Location.h */,
+				6B022BF61A40547A00B6F987 /* Location.m */,
+				6B022BF71A40547A00B6F987 /* Route.h */,
+				6B022BF81A40547A00B6F987 /* Route.m */,
 				6B463D4C19D8645200BFE5C2 /* AppDelegate.h */,
 				6B463D4D19D8645200BFE5C2 /* AppDelegate.m */,
 				6B463D7919D9711600BFE5C2 /* GraphNodeIndex.csv */,
 				6B463D7419D9702800BFE5C2 /* GraphEdges.csv */,
 				6B463D6E19D86C3E00BFE5C2 /* GraphNodesCoordinates.csv */,
-				6B463D7E19D98FB400BFE5C2 /* Route.h */,
-				6B463D7F19D98FB400BFE5C2 /* Location.h */,
-				6B463D8019D98FB400BFE5C2 /* Location.m */,
-				6B463D8119D98FB400BFE5C2 /* Route.m */,
 				6B463D5219D8645200BFE5C2 /* Images.xcassets */,
 				6B463D5419D8645200BFE5C2 /* MainMenu.xib */,
 				6B463D4F19D8645200BFE5C2 /* hRoutingCoreDataImport.xcdatamodeld */,
@@ -254,10 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B022BFA1A40547A00B6F987 /* Route.m in Sources */,
 				6B463D4E19D8645200BFE5C2 /* AppDelegate.m in Sources */,
-				6B463D8219D98FB400BFE5C2 /* Location.m in Sources */,
 				6B463D5119D8645200BFE5C2 /* hRoutingCoreDataImport.xcdatamodeld in Sources */,
-				6B463D8319D98FB400BFE5C2 /* Route.m in Sources */,
+				6B022BF91A40547A00B6F987 /* Location.m in Sources */,
 				6B463D4B19D8645200BFE5C2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +445,7 @@
 				6B463D6719D8645200BFE5C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B463D6819D8645200BFE5C2 /* Build configuration list for PBXNativeTarget "hRoutingCoreDataImportTests" */ = {
 			isa = XCConfigurationList;
@@ -453,6 +454,7 @@
 				6B463D6A19D8645200BFE5C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
