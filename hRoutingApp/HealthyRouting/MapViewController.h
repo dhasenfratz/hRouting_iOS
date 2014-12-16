@@ -25,12 +25,38 @@
 #import "Route.h"
 #import "AppDelegate.h"
 
+/**
+ * The MapViewController class is responsible for the map view, which shows
+ * the computed routes on top of Google Maps. This view is either reached from
+ * the MyRoute tab after computing new routes or from the History tab when
+ * looking at a route computed previously.
+ */
 @interface MapViewController : UIViewController <CLLocationManagerDelegate>
 
-@property (nonatomic, strong) CLLocationManager *locationAuthorizationManager;
-@property (nonatomic, strong) Route *route;
-- (IBAction)InfoTouchAction:(id)sender;
-
+/**
+ * Points to the unique appDelegate of the app.
+ */
 @property (nonatomic, weak) AppDelegate *appDelegate;
+
+/**
+ * The location authorization manager to request the user's location.
+ * This enables to show the user's current location on Google Maps.
+ */
+@property (nonatomic, strong) CLLocationManager *locationAuthorizationManager;
+
+/**
+ * Route hols shortest and health-optimal route information, which are
+ * displayed on top of Google Maps.
+ */
+@property (nonatomic, strong) Route *route;
+
+/**
+ * Called when the Info button is pressed. The method compared the length
+ * and pollution exposure of the shortest and health-optimal routes and
+ * displays this information to the user.
+ *
+ * @param sender  Object of the sender view.
+ */
+- (IBAction)InfoTouchAction:(id)sender;
 
 @end

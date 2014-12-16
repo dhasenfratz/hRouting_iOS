@@ -60,14 +60,14 @@
     return self;
 }
 
-+ (void) copyComputedRoutesFrom:(Route *)origRoute to:(Route*)destRoute {
++ (void) copyComputedRoutesOrig:(Route *)orig dest:(Route*)dest {
     
-    destRoute.shortestPath = [origRoute.shortestPath copy];
-    destRoute.healthOptPath = [origRoute.healthOptPath copy];
-    destRoute.shortestPathDistance = [origRoute.shortestPathDistance copy];
-    destRoute.shortestPathPollution = [origRoute.shortestPathPollution copy];
-    destRoute.hOptPathDistance = [origRoute.hOptPathDistance copy];
-    destRoute.hOptPathPollution = [origRoute.hOptPathPollution copy];
+    dest.shortestPath = [orig.shortestPath copy];
+    dest.healthOptPath = [orig.healthOptPath copy];
+    dest.shortestPathDistance = [orig.shortestPathDistance copy];
+    dest.shortestPathPollution = [orig.shortestPathPollution copy];
+    dest.hOptPathDistance = [orig.hOptPathDistance copy];
+    dest.hOptPathPollution = [orig.hOptPathPollution copy];
 
 }
 

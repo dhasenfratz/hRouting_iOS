@@ -24,22 +24,105 @@
 #import "Location.h"
 #import "AppDelegate.h"
 
+/**
+ * The MyRouteTableViewController class is responsible for the child view
+ * inside the MyRoute navigation tab. The class handles the from and to
+ * location input fields and the route switch buttons.
+ */
 @interface MyRouteTableViewController : UITableViewController <CLLocationManagerDelegate>
 
-@property (nonatomic, strong) Location *from;
-@property (nonatomic, strong) Location *to;
-@property (weak, nonatomic) IBOutlet UITextField *fromTextField;
-@property (weak, nonatomic) IBOutlet UITextField *toTextField;
-@property (weak, nonatomic) IBOutlet UISwitch *shortestRouteSwitch;
-@property (weak, nonatomic) IBOutlet UISwitch *healthOptimalRouteSwitch;
-- (IBAction)fromEditEndAction:(id)sender;
-- (IBAction)toEditEndAction:(id)sender;
-- (IBAction)shortestRouteAction:(id)sender;
-- (IBAction)hOptimalRouteAction:(id)sender;
-- (IBAction)myLocationFromAction:(id)sender;
-- (IBAction)myLocationToAction:(id)sender;
-
-@property (nonatomic, strong) CLLocationManager *locationAuthorizationManager;
+/**
+ * Points to the unique appDelegate of the app.
+ */
 @property (nonatomic, weak) AppDelegate *appDelegate;
+
+/**
+ * The from location entered by the user storing name and coordinates.
+ */
+@property (nonatomic, strong) Location *from;
+
+/**
+ * The to location entered by the user storing name and coordinates.
+ */
+@property (nonatomic, strong) Location *to;
+
+/**
+ * The from location text field.
+ */
+@property (weak, nonatomic) IBOutlet UITextField *fromTextField;
+
+/**
+ * The to location text field.
+ */
+@property (weak, nonatomic) IBOutlet UITextField *toTextField;
+
+/**
+ * Switch to select whether the shortest route is computed.
+ */
+@property (weak, nonatomic) IBOutlet UISwitch *shortestRouteSwitch;
+
+/**
+ * Switch to select whether the health-optimal route is computed.
+ */
+@property (weak, nonatomic) IBOutlet UISwitch *healthOptimalRouteSwitch;
+
+/**
+ * The location authorization manager to request the user's location.
+ * This enables to automatically detect the user's location and use it as
+ * from or to location.
+ */
+@property (nonatomic, strong) CLLocationManager *locationAuthorizationManager;
+
+/**
+ * Called when the user ends editing the from text field. The method checks whether the
+ * given location is valid and uses the Google Geocoding API to get the location's coordinates.
+ * Further, it checks whether the coordinates are within the bounds supported by the app.
+ *
+ * @param sender  Object of the sender view.
+ */
+- (IBAction)fromEditEndAction:(id)sender;
+
+/**
+ * Called when the user ends editing the to text field. The method checks whether the
+ * given location is valid and uses the Google Geocoding API to get the location's coordinates.
+ * Further, it checks whether the coordinates are within the bounds supported by the app.
+ *
+ * @param sender  Object of the sender view.
+ */
+- (IBAction)toEditEndAction:(id)sender;
+
+/**
+ * Called when the user changes the shortest route switch. The method updates with the 
+ * new value the user default settings.
+ *
+ * @param sender  Object of the sender view.
+ */
+- (IBAction)shortestRouteAction:(id)sender;
+
+/**
+ * Called when the user changes the health-optimal route switch. The method updates with the
+ * new value the user default settings.
+ *
+ * @param sender  Object of the sender view.
+ */
+- (IBAction)hOptimalRouteAction:(id)sender;
+
+/**
+ * Called when the user wants to retrieve its location for the from location. The method
+ * gets the user's coordinates, checks whether it is inside the bounds supported by the app,
+ * and uses the Google Geocoding API to get the name of the location.
+ *
+ * @param sender  Object of the sender view.
+ */
+- (IBAction)myLocationFromAction:(id)sender;
+
+/**
+ * Called when the user wants to retrieve its location for the to location. The method
+ * gets the user's coordinates, checks whether it is inside the bounds supported by the app,
+ * and uses the Google Geocoding API to get the name of the location.
+ *
+ * @param sender  Object of the sender view.
+ */
+- (IBAction)myLocationToAction:(id)sender;
 
 @end

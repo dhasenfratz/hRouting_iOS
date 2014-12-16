@@ -21,8 +21,17 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * The HistoryTableViewController class is responsible for the History navigation tab.
+ * The tab is used to list previously looked up routes.
+ */
 @interface HistoryTableViewController : UITableViewController
 
+/**
+ * A link to the array holding all previously computed routes in a time-ordered fashion.
+ *
+ * @see AppDelegate historyEntries
+ */
 @property (nonatomic, weak) NSMutableArray *historyRoutes;
 
 @end

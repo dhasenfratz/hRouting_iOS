@@ -21,20 +21,47 @@
 
 #import <Foundation/Foundation.h>
 
-// Supported bounds around the city of Zurich
-// These bounds are updated with more exact coordinates when loading data
+// Supported bounds around the city of Zurich.
 #define BOUNDS_SOUTHWEST_LON 47.328392
 #define BOUNDS_SOUTHWEST_LAT 8.464172
 #define BOUNDS_NORTHEAST_LON 47.436693
 #define BOUNDS_NORTHEAST_LAT 8.610260
 
+/**
+ * The Location class holds all information belonging to a location, such as
+ * the from and to locations of a route.
+ */
 @interface Location : NSObject <NSCoding, NSCopying>
 
+/**
+ * Name of the location.
+ */
 @property (nonatomic, copy) NSString *name;
+
+/**
+ * Latitude of the location (WGS84 format).
+ */
 @property (nonatomic, strong) NSNumber *latitude;
+
+/**
+ * Longitude of the location (WGS84 format).
+ */
 @property (nonatomic, strong) NSNumber *longitude;
 
+/**
+ * Checks whether the given location is within the
+ * bounds supported by the application (see DEFINES on top).
+ *
+ * @param location  Location to check.
+ */
 + (BOOL)insideBounds:(Location *)location;
+
+/**
+ * Checks whether given location is valid location and
+ * informs the user if there is a problem.
+ *
+ * @param location  Location to check.
+ */
 + (void) checkLocation:(Location *)location;
 
 @end

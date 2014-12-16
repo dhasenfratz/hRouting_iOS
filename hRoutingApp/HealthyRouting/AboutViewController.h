@@ -21,7 +21,16 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * The AboutViewController class is responsible for the About navigation tab.
+ * The tab is used to display details about the OpenSense project, the app,
+ * and provides contact information.
+ */
 @interface AboutViewController : UIViewController
+
+/**
+ * The text field in the About tab displaying information about the app.
+ */
 @property (weak, nonatomic) IBOutlet UITextView *aboutTextView;
 
 @end

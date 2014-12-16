@@ -194,7 +194,7 @@
 
 #pragma mark - Application's Documents directory
 
-// Returns the URL to the application's Documents directory.
+// Returns the URL to the application's document directory.
 - (NSURL *)applicationDocumentsDirectory
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];

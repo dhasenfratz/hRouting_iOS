@@ -27,27 +27,61 @@
 // - 1: Dijkstra
 // - 2: A*
 #define SHORTEST_ROUTE_ALG 1
-// Run tests to find average computation times
+// Run tests to find average computation times.
 #define ENABLE_TIMING_TEST 0
-// Run tests to compare Dijkstra and A*
+// Run tests to compare Dijkstra and A*.
 #define ENABLE_ALG_TEST 0
-// Number of test runs
+// Number of test runs.
 #define TEST_RUNS 1000
 
+/**
+ * The MyRouteViewController class is responsible for the MyRoute navigation tab.
+ * The tab is used to let the user input the from and to location and let the user
+ * choose what kind of route it wants to compute.
+ */
 @interface MyRouteViewController : UIViewController
 
-@property (nonatomic, strong) UIActivityIndicatorView *spinner;
-@property (nonatomic, weak) MyRouteTableViewController *childViewController;
-- (IBAction)tapParentViewController:(id)sender;
-- (IBAction)computeRouteAction:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *computeRouteButton;
-@property (weak, nonatomic) IBOutlet UIView *containerView;
-
+/**
+ * Points to the unique appDelegate of the app.
+ */
 @property (weak, nonatomic) AppDelegate *appDelegate;
 
-typedef struct {
-    long nodeId;
-    double dist;
-} DistToSource;
+/**
+ * Spinner is active when data is initially loaded and while new routes
+ * are computed.
+ */
+@property (nonatomic, strong) UIActivityIndicatorView *spinner;
+
+/**
+ * The child view managing the from and to input fields and route selection switches.
+ */
+@property (nonatomic, weak) MyRouteTableViewController *childViewController;
+
+/**
+ * The container view inside the MyRoute tab holding the child view.
+ */
+@property (weak, nonatomic) IBOutlet UIView *containerView;
+
+/**
+ * Button to compute shorted and health-optimal routes for the given locations.
+ */
+@property (weak, nonatomic) IBOutlet UIButton *computeRouteButton;
+
+/**
+ * Called when user taps into the MyRoute tab. If active, the keyboard view
+ * is resigned.
+ *
+ * @param sender  Object of the sender view.
+ */
+- (IBAction)tapParentViewController:(id)sender;
+
+/**
+ * Called when the Compute Route button is pressed. The method computes
+ * the shortest and health-optimal routes and segues to the map view to
+ * display the routes on top of Google Maps.
+ *
+ * @param sender  Object of the sender view.
+ */
+- (IBAction)computeRouteAction:(id)sender;
 
 @end

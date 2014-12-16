@@ -28,6 +28,11 @@
 
 @implementation MyRouteViewController
 
+typedef struct {
+    long nodeId;
+    double dist;
+} DistToSource;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -72,7 +77,7 @@
     
     // Show text if the app is started the first time
     if (self.appDelegate.firstRun) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Welcome!" message:@"Enter origin and destination in the area of Zurich (Switzerland) to compute a health-optimal route between the two locations. Check out the example routes stored in your history."
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Welcome!" message:@"Enter origin and destination in the area of Zurich (Switzerland) to compute a health-optimal route between the two locations. Check out the exemplary routes stored in your history."
                                                        delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
         [alert show];
     }
@@ -670,7 +675,7 @@ const CFBinaryHeapCallBacks cfCallbacks = { 0, NULL, NULL, NULL, fcompare };
     // Remove route if it already exists.
     if ([res count] == 1) {
         
-        [Route copyComputedRoutesFrom:(Route *)res[0] to:route];
+        [Route copyComputedRoutesOrig:(Route *)res[0] dest:route];
         [self.appDelegate.historyEntries removeObjectIdenticalTo:res[0]];
     } else if ([res count] > 1) {
         NSLog(@"ERROR: Duplicate entries in history table!");

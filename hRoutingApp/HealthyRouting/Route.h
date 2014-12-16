@@ -22,20 +22,71 @@
 #import <Foundation/Foundation.h>
 #import "Location.h"
 
+/**
+ * The Route class holds all information belonging to a route, such as from and to
+ * destinations, date of search, and the shortest and health-ooptimal routes.
+ */
 @interface Route : NSObject <NSCoding>
 
+/**
+ * From and to location of the route.
+ */
 @property (nonatomic, copy) NSString *descr;
+
+/**
+ * Date of computing the route.
+ */
 @property (nonatomic, strong) NSDate *date;
+
+/**
+ * From location of the route.
+ */
 @property (nonatomic, strong) Location *from;
+
+/**
+ * To location of the route.
+ */
 @property (nonatomic, strong) Location *to;
+
+/**
+ * Array of node ids belonging to the shortest route between
+ * the from and to locations.
+ */
 @property (nonatomic, strong) NSMutableArray *shortestPath;
+
+/**
+ * Array of node ids belonging to the shortest route between
+ * the from and to locations.
+ */
 @property (nonatomic, strong) NSMutableArray *healthOptPath;
 
+/**
+ * Lenght of the shortest route.
+ */
 @property (nonatomic, strong) NSNumber *shortestPathDistance;
+
+/**
+ * Pollution exposure of the shortest route.
+ */
 @property (nonatomic, strong) NSNumber *shortestPathPollution;
+
+/**
+ * Lenght of the health-optimal route.
+ */
 @property (nonatomic, strong) NSNumber *hOptPathDistance;
+
+/**
+ * Pollution exposure of the health-optimal route.
+ */
 @property (nonatomic, strong) NSNumber *hOptPathPollution;
 
-+ (void) copyComputedRoutesFrom:(Route *)origRoute to:(Route*)destRoute;
+/**
+ * Copies all fields related to the shortest and health-optimal routes
+ * to the new route object.
+ *
+ * @param orig  Original route to copy from.
+ * @param dest  Destination route to copy to.
+ */
++ (void) copyComputedRoutesOrig:(Route *)orig dest:(Route*)dest;
 
 @end
