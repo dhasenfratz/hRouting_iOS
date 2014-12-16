@@ -1,11 +1,11 @@
 //
 //  Location.m
-//  hRouting
+//  hRoutingCoreDataImport
 //
 //  Created by David Hasenfratz on 19/09/14.
 //  Copyright (c) 2014 TIK, ETH Zurich. All rights reserved.
 //
-//  hRouting is free software: you can redistribute it and/or modify
+//  hRoutingCoreDataImport is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License as published by
 //  the Free Software Foundation, either version 3 of the License, or
 //  (at your option) any later version.
@@ -19,7 +19,6 @@
 //  along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-#import <UIKit/UIKit.h>
 #import "Location.h"
 
 @implementation Location
@@ -31,32 +30,6 @@
         return FALSE;
     } else {
         return TRUE;
-    }
-}
-
-// Check whether location is valid
-+ (void) checkLocation:(Location *)location {
-    // If address is NIL then we could not reach Google for geocoding.
-    if (location.name == Nil) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"Could not reach Google to get coordinates of specified location"
-                                                       delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-        [alert show];
-    }
-    // If address is @"" then we could not find location entered by the user.
-    else {
-        if ([location.name length] == 0) {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"Could not find coordinates of specified location"
-                                                           delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-            [alert show];
-        } else {
-            // Check whether coordinates are within the supported region.
-            if (![Location insideBounds:location]) {
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"Specified location is outside the supported area of Zurich, Switzerland"
-                                                               delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-                [alert show];
-            }
-            
-        }
     }
 }
 
