@@ -68,8 +68,8 @@
 
 /**
  * The location authorization manager to request the user's location.
- * This enables to automatically detect the user's location and use it as
- * from or to location.
+ * This enables the automatic detection of the user's location, which can
+ * be set as from or to location.
  */
 @property (nonatomic, strong) CLLocationManager *locationAuthorizationManager;
 
@@ -92,16 +92,16 @@
 - (IBAction)toEditEndAction:(id)sender;
 
 /**
- * Called when the user changes the shortest route switch. The method updates with the 
- * new value the user default settings.
+ * Called when the user changes the shortest route switch. The method updates the
+ * default user setting with the new value.
  *
  * @param sender  Object of the sender view.
  */
 - (IBAction)shortestRouteAction:(id)sender;
 
 /**
- * Called when the user changes the health-optimal route switch. The method updates with the
- * new value the user default settings.
+ * Called when the user changes the health-optimal route switch. The method updates the
+ * default user setting with the new value.
  *
  * @param sender  Object of the sender view.
  */

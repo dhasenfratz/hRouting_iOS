@@ -45,13 +45,13 @@
 @property (nonatomic, strong) CLLocationManager *locationAuthorizationManager;
 
 /**
- * Route hols shortest and health-optimal route information, which are
+ * Route holds shortest and health-optimal route information, which are
  * displayed on top of Google Maps.
  */
 @property (nonatomic, strong) Route *route;
 
 /**
- * Called when the Info button is pressed. The method compared the length
+ * Called when the Info button is pressed. The method compares the length
  * and pollution exposure of the shortest and health-optimal routes and
  * displays this information to the user.
  *

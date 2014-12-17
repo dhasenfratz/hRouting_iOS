@@ -55,7 +55,7 @@
 @property (nonatomic, strong) NSMutableArray *shortestPath;
 
 /**
- * Array of node ids belonging to the shortest route between
+ * Array of node ids belonging to the health-optimal route between
  * the from and to locations.
  */
 @property (nonatomic, strong) NSMutableArray *healthOptPath;

@@ -36,8 +36,8 @@
 
 /**
  * The MyRouteViewController class is responsible for the MyRoute navigation tab.
- * The tab is used to let the user input the from and to location and let the user
- * choose what kind of route it wants to compute.
+ * The tab is used to let the user input the from and to locations and let the user
+ * the type of route she wants to compute.
  */
 @interface MyRouteViewController : UIViewController
 
@@ -48,7 +48,7 @@
 
 /**
  * Spinner is active when data is initially loaded and while new routes
- * are computed.
+ * are computed. It is rendered on top of the Compute Route button.
  */
 @property (nonatomic, strong) UIActivityIndicatorView *spinner;
 
@@ -68,8 +68,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *computeRouteButton;
 
 /**
- * Called when user taps into the MyRoute tab. If active, the keyboard view
- * is resigned.
+ * Called when user taps into the MyRoute view. If keyboard input is active then
+ * it will be resigned.
  *
  * @param sender  Object of the sender view.
  */
@@ -78,7 +78,7 @@
 /**
  * Called when the Compute Route button is pressed. The method computes
  * the shortest and health-optimal routes and segues to the map view to
- * display the routes on top of Google Maps.
+ * display the newly computed routes on top of Google Maps.
  *
  * @param sender  Object of the sender view.
  */

@@ -56,7 +56,7 @@
 - (IBAction)checkForUpdateAction:(id)sender;
 
 /**
- * Called when the button to clear the history is pressed.
+ * Called when the clear history button is pressed.
  * The method reconfirms the action and upon confirmation
  * removes all entries from the history array.
  *
