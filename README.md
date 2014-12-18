@@ -10,13 +10,13 @@ Perfect for pedestrians, cyclists, and urban dwellers.
 
 Get the app for free at https://itunes.apple.com/us/app/hrouting-health-optimal-route/id931299863
 
-<img src="/AppStorePics/iPhone5_Welcome.png" alt="Welcome box" width="320" height="568" border="10" />
-<img src="/AppStorePics/iPhone5_MyRoute.png" alt="Route input" width="320" height="568" border="10" />
-<img src="/AppStorePics/iPhone5_Route.png" alt="Routes" width="320" height="568" border="10" />
-<img src="/AppStorePics/iPhone5_RouteInfo.png" alt="Routes info" width="320" height="568" border="10" />
-<img src="/AppStorePics/iPhone5_History.png" alt="History" width="320" height="568" border="10" />
-<img src="/AppStorePics/iPhone5_Settings.png" alt="Settings" width="320" height="568" border="10" />
-<img src="/AppStorePics/iPhone5_About.png" alt="About" width="320" height="568" border="10" />
+<img src="/AppStorePics/iPhone5_Welcome.png" alt="Welcome box" width="320" height="568" border="20" />
+<img src="/AppStorePics/iPhone5_MyRoute.png" alt="Route input" width="320" height="568" border="20" />
+<img src="/AppStorePics/iPhone5_Route.png" alt="Routes" width="320" height="568" border="20" />
+<img src="/AppStorePics/iPhone5_RouteInfo.png" alt="Routes info" width="320" height="568" border="20" />
+<img src="/AppStorePics/iPhone5_History.png" alt="History" width="320" height="568" border="20" />
+<img src="/AppStorePics/iPhone5_Settings.png" alt="Settings" width="320" height="568" border="20" />
+<img src="/AppStorePics/iPhone5_About.png" alt="About" width="320" height="568" border="20" />
 
 Repository Layout
 ------------
