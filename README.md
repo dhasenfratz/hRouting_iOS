@@ -10,13 +10,13 @@ Perfect for pedestrians, cyclists, and urban dwellers.
 
 Get the app for free at https://itunes.apple.com/us/app/hrouting-health-optimal-route/id931299863
 
-![Alt text](/README_img/iPhone5_Welcome.png?raw=true)
-![Alt text](/README_img/iPhone5_MyRoute.png?raw=true)
-![Alt text](/README_img/iPhone5_Route.png?raw=true)
-![Alt text](/README_img/iPhone5_RouteInfo.png?raw=true)
-![Alt text](/README_img/iPhone5_History.png?raw=true)
-![Alt text](/README_img/iPhone5_Settings.png?raw=true)
-![Alt text](/README_img/iPhone5_About.png?raw=true)
+![Alt text](/AppStorePics/iPhone5_Welcome.png?raw=true)
+![Alt text](/AppStorePics/iPhone5_MyRoute.png?raw=true)
+![Alt text](/AppStorePics/iPhone5_Route.png?raw=true)
+![Alt text](/AppStorePics/iPhone5_RouteInfo.png?raw=true)
+![Alt text](/AppStorePics/iPhone5_History.png?raw=true)
+![Alt text](/AppStorePics/iPhone5_Settings.png?raw=true)
+![Alt text](/AppStorePics/iPhone5_About.png?raw=true)
 
 Repository Layout
 ------------
@@ -29,8 +29,6 @@ Repository Layout
 * `/hRouting_iOS/LaunchImages` Launch images for the different phone models
 
 * `/hRouting_iOS/NavigationBarButtons` Buttons used in the app for the navigation bar
-
-* `/hRouting_iOS/README_img` Images used in README.md
 
 * `/hRouting_iOS/hRoutingApp` Implementation of the iOS iPhone/iPad application
 
