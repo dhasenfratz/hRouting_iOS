@@ -22,10 +22,10 @@
 #import <Foundation/Foundation.h>
 
 // Supported bounds around the city of Zurich.
-#define BOUNDS_SOUTHWEST_LON 47.328392
-#define BOUNDS_SOUTHWEST_LAT 8.464172
-#define BOUNDS_NORTHEAST_LON 47.436693
-#define BOUNDS_NORTHEAST_LAT 8.610260
+#define BOUNDS_SOUTHWEST_LAT 47.328392
+#define BOUNDS_SOUTHWEST_LON 8.464172
+#define BOUNDS_NORTHEAST_LAT 47.436693
+#define BOUNDS_NORTHEAST_LON 8.610260
 
 /**
  * The Location class holds all information belonging to a location, such as

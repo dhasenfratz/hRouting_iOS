@@ -195,7 +195,7 @@
     
     NSString *geocodingBaseUrl = @"http://maps.googleapis.com/maps/api/geocode/json?";
     // Use bounds for Zurich in the geocode requrest to bias geocoding for the Zurich area
-    NSString *url = [NSString stringWithFormat:@"%@address=%@&sensor=false&language=de&bounds=%f,%f|%f,%f", geocodingBaseUrl, inputAddress, BOUNDS_SOUTHWEST_LON, BOUNDS_SOUTHWEST_LAT, BOUNDS_NORTHEAST_LON, BOUNDS_NORTHEAST_LAT];
+    NSString *url = [NSString stringWithFormat:@"%@address=%@&sensor=false&language=de&bounds=%f,%f|%f,%f", geocodingBaseUrl, inputAddress, BOUNDS_SOUTHWEST_LAT, BOUNDS_SOUTHWEST_LON, BOUNDS_NORTHEAST_LAT, BOUNDS_NORTHEAST_LON];
     url = [url stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
     NSURL *queryUrl = [NSURL URLWithString:url];
     

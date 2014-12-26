@@ -26,8 +26,8 @@
 
 // Check whether location is inside the supported bounds
 + (BOOL)insideBounds:(Location *)location {
-    if ([location.latitude doubleValue] < BOUNDS_SOUTHWEST_LON || [location.latitude doubleValue] > BOUNDS_NORTHEAST_LON ||
-        [location.longitude doubleValue] < BOUNDS_SOUTHWEST_LAT || [location.longitude doubleValue] > BOUNDS_NORTHEAST_LAT) {
+    if ([location.latitude doubleValue] < BOUNDS_SOUTHWEST_LAT || [location.latitude doubleValue] > BOUNDS_NORTHEAST_LAT ||
+        [location.longitude doubleValue] < BOUNDS_SOUTHWEST_LON || [location.longitude doubleValue] > BOUNDS_NORTHEAST_LON) {
         return FALSE;
     } else {
         return TRUE;

@@ -23,10 +23,10 @@
 
 // Supported bounds around the city of Zurich
 // These bounds are updated with more exact coordinates when loading data
-#define BOUNDS_SOUTHWEST_LON 47.328392
-#define BOUNDS_SOUTHWEST_LAT 8.464172
-#define BOUNDS_NORTHEAST_LON 47.436693
-#define BOUNDS_NORTHEAST_LAT 8.610260
+#define BOUNDS_SOUTHWEST_LAT 47.328392
+#define BOUNDS_SOUTHWEST_LON 8.464172
+#define BOUNDS_NORTHEAST_LAT 47.436693
+#define BOUNDS_NORTHEAST_LON 8.610260
 
 @interface Location : NSObject <NSCoding, NSCopying>
 
