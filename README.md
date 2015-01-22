@@ -8,7 +8,7 @@ Using high-resolution air pollution maps, the app computes the shortest path bet
 Further, it provides information about the route lengths and the expected exposure reduction.
 Perfect for pedestrians, cyclists, and urban dwellers.
 
-Get the app for free at https://itunes.apple.com/us/app/hrouting-health-optimal-route/id931299863
+Get the app for free in the App Store: https://itunes.apple.com/us/app/hrouting-health-optimal-route/id931299863
 
 <img src="/AppStorePics/iPhone5_Welcome.png" alt="Welcome box" width="320" height="568" border="20" />
 <img src="/AppStorePics/iPhone5_MyRoute.png" alt="Route input" width="320" height="568" border="20" />
