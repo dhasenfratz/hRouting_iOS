@@ -1,4 +1,4 @@
-hRouting App for iPhone/iPad
+hRouting App for iOS devices (iPhones/iPads)
 ============
 The Health-Optimal Route Planner
 ------------
