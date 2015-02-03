@@ -30,7 +30,7 @@ Repository Layout
 
 * `/hRouting_iOS/NavigationBarButtons` Buttons used in the app for the navigation bar
 
-* `/hRouting_iOS/hRoutingApp` Implementation of the iOS iPhone/iPad application
+* `/hRouting_iOS/hRoutingApp` Implementation of the iOS application
 
 * `/hRouting_iOS/hRoutingCreateCoreData` Implementation of the iOS desktop application to create the default sqlite database loaded in the app
 
