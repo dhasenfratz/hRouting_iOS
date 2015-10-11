@@ -3,7 +3,7 @@
 //  hRouting
 //
 //  Created by David Hasenfratz on 17/09/14.
-//  Copyright (c) 2014 TIK, ETH Zurich. All rights reserved.
+//  Copyright (c) 2015 David Hasenfratz. All rights reserved.
 //
 //  hRouting is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License as published by
@@ -34,6 +34,8 @@
  * is initiated when the app is loaded.
  */
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
 
 /**
  * History array holds all previous routes computed by the user. Initially it

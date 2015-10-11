@@ -3,7 +3,7 @@
 //  hRouting
 //
 //  Created by David Hasenfratz on 19/09/14.
-//  Copyright (c) 2014 TIK, ETH Zurich. All rights reserved.
+//  Copyright (c) 2015 David Hasenfratz. All rights reserved.
 //
 //  hRouting is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License as published by
@@ -193,7 +193,7 @@
 
 + (void) getGeoCode:(NSString *)inputAddress loc:(Location *)location {
     
-    NSString *geocodingBaseUrl = @"http://maps.googleapis.com/maps/api/geocode/json?";
+    NSString *geocodingBaseUrl = @"https://maps.googleapis.com/maps/api/geocode/json?";
     // Use bounds for Zurich in the geocode requrest to bias geocoding for the Zurich area
     NSString *url = [NSString stringWithFormat:@"%@address=%@&sensor=false&language=de&bounds=%f,%f|%f,%f", geocodingBaseUrl, inputAddress, BOUNDS_SOUTHWEST_LAT, BOUNDS_SOUTHWEST_LON, BOUNDS_NORTHEAST_LAT, BOUNDS_NORTHEAST_LON];
     url = [url stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
@@ -260,7 +260,7 @@
 
 + (void) getReverseGeoCode:(Location *)location {
     
-    NSString *geocodingBaseUrl = @"http://maps.googleapis.com/maps/api/geocode/json?";
+    NSString *geocodingBaseUrl = @"https://maps.googleapis.com/maps/api/geocode/json?";
     // Use bounds for Zurich in the geocode requrest to bias geocoding for the Zurich area
     NSString *url = [NSString stringWithFormat:@"%@latlng=%@,%@&sensor=false&language=de", geocodingBaseUrl, location.latitude.stringValue, location.longitude.stringValue];
     url = [url stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
